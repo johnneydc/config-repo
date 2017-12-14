@@ -1,7 +1,20 @@
 security:
     basic:
-        enabled: false # turn-off securing our application endpoints
+        enabled: false
 
 management:
     security:
-        enabled: false # turn-off securing the actuator endpoints
+        enabled: false
+
+logging: # <----New sections below
+    pattern:
+        console: "%-5level %logger{36} : %msg%n"
+    level:
+        root: WARN
+        io:
+            pivotal: DEBUG
+
+greeting:
+    displayFortune: false
+
+quoteServiceURL: http://quote-service-dev.cfapps.io/quote
