@@ -12,7 +12,7 @@ logging: # <----New sections below
     level:
         root: WARN
         io:
-            pivotal: DEBUG
+            pivotal: INFO
 
 greeting:
     displayFortune: true
