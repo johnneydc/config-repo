@@ -1,0 +1,15 @@
+security:
+  basic:
+    enabled: false
+
+management:
+  security:
+    enabled: false
+
+logging:
+  pattern:
+    console: "%-5level %logger{36} : %msg%n"
+  level:
+    root: WARN
+    io:
+      pivotal: DEBUG
